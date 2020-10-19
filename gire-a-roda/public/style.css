@@ -1,0 +1,355 @@
+:root {
+    --primaryColor: #d86609;
+    --asideColor: #743603;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container .pag-home {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--primaryColor);
+}
+
+.container .pag-home .content {
+    height: 100vh;
+    background: var(--primaryColor);
+    flex: 3;
+}
+
+.container .pag-home .content .header {
+    height: 50px;
+    background: var(--asideColor);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.85);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+.container .pag-home .content .body {
+    border-radius: 0 0 30px 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container .pag-home .content .body p {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.container .pag-home .content .body ul#listGamer li {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.container .pag-home .content .footer {
+    font-size: 28px;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    background: var(--asideColor);
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.85);
+    width: 96%;
+    margin: 0 2%;
+    text-align: center;
+}
+
+
+.container .pag-home aside {
+    height: 80vh;
+    background: var(--asideColor);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px 0 0 50px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.85);
+}
+
+.container .pag-home aside h2 {
+    margin-bottom: 80px;
+}
+
+.container .pag-home aside form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.container .pag-home aside form label{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.container .pag-home aside form input{
+    font-size: 22px;
+    height: 38px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    border: 2px solid #381a01;
+    outline: 0;
+    padding: 0 8px 0 8px;
+    text-align: center;
+}
+
+.container .pag-home aside form div.btn {
+    display: flex;
+}
+
+.container .pag-home aside form div.btn button{
+    width: 120px;
+    font-size: 22px;
+    height: 38px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    border: 2px solid #d86609;
+    background: #381a01;
+    outline: 0;
+    margin: 4px;
+    color: #FFF;
+}
+
+/* Pag-Game ---------------------------------------------------------------- */
+.container .pag-game {
+    height: 100vh;
+    display: flex;
+}
+
+.container .pag-game .header {
+    height: 120px;
+    background: var(--primaryColor);
+    display: flex;
+}
+
+.container .pag-game .header .logo{
+    flex: 1;
+}
+
+.container .pag-game .header .gamers{
+    width: 80%;
+}
+
+.container .pag-game .header .gamers ul {
+    display: flex;
+    list-style: none;
+}
+
+.container .pag-game .header .gamers ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    background: var(--asideColor);
+    width: 170px;
+    height: 90px;
+    margin: 10px 4px;
+    border-radius: 15px;
+    border: solid 3px #2c1400;
+}
+
+.container .pag-game .header .gamers ul li.playing{
+    background: #FFF;
+     border: solid 3px #000;
+}
+
+.container .pag-game .header .gamers ul li span {
+    margin-top: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container .pag-game .header .gamers ul li span.pontosTotais {
+    font-size: 24px;
+}
+
+.container .pag-game .header .gamers ul li span.pontosRodada {
+    font-size: 24px;
+}
+
+.container .pag-game .content {
+    display: flex;
+}
+
+.container .pag-game .content .area-game {
+    flex: 4;
+    margin-left: 20px;
+    width: 60%;
+
+}
+
+.container .pag-game .content .area-game .panel {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .pag-game .content .area-game .dica {
+    margin-top: 20px;
+    height: 50px;
+    background: #0059b3;
+    border: 3px solid #001e3d ;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #FFF;
+    
+}
+
+.container .pag-game .content .area-game .panel .linha {
+    display: flex;
+}
+
+.container .pag-game .content .area-game .panel .linha .letra {
+    width: 65px;
+    height: 65px;
+    background-color: rgb(10, 180, 10);
+    border: 3px solid rgb(10, 100, 10);
+    margin: 2px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+.container .pag-game .content .area-game .panel .linha .letra.sorte-letra {
+    background-color: #EDEDED;
+    border: 3px solid #333;
+}
+
+.container .pag-game .content .area-game .panel .linha .letra.show-letra {
+    background-color: #FFF;
+    border: 3px solid #999;
+}
+
+.container .pag-game .content .area-game .panel .linha .letra#L0-C0,
+.container .pag-game .content .area-game .panel .linha .letra#L0-C13,
+.container .pag-game .content .area-game .panel .linha .letra#L3-C0,
+.container .pag-game .content .area-game .panel .linha .letra#L3-C13 {
+    background-color: transparent;
+    border: 3px solid transparent;
+}
+
+.container .pag-game .content .area-game .area-alfabeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .pag-game .content .area-game .area-alfabeto .linha-01{
+    display: flex;
+}
+
+.container .pag-game .content .area-game .area-alfabeto .linha-02{
+    display: flex;
+}
+
+.container .pag-game .content .area-game .area-alfabeto .letra-alfabeto {
+    width: 44px;
+    height: 44px;
+    background: #1e1e1e;
+    margin: 4px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #DADADA;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.container .pag-game .content .area-game .area-alfabeto .letra-alfabeto.not-used:hover {
+    color: #1e1e1e;
+    background: #DADADA;
+    border: 2px solid rgba(200, 200, 200, 0.75);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+    transform: scale(1.2);
+}
+
+.container .pag-game .content .area-game .area-alfabeto .letra-alfabeto.not-used:active {
+    opacity: 0.2;
+}
+
+.container .pag-game .content .area-game .area-alfabeto .letra-alfabeto.used {
+    color: #1e1e1e;
+    background: #DADADA;
+    border: 2px solid rgba(200, 200, 200, 0.75);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.container .pag-game .content .area-roleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .pag-game .content .area-roleta .setaRoleta {
+    width: 6px;
+    height: 30px;
+    left: 0px;
+    top: 30px;
+    border-radius: 50%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    background: #000;
+    position: relative;
+}
+
+.container .pag-game .content .area-roleta .btnGirarRoleta {
+    width: 240px;
+    height: 50px;
+    border-radius: 50px;
+    background: #000;
+    border: 5px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+.container .pag-game .content .area-roleta .btnGirarRoleta:hover {
+    background: #333;
+    border: 6px solid #777;
+}
+
+.container .pag-game .content .area-roleta .btnGirarRoleta:active {
+    opacity: 0.75;
+}

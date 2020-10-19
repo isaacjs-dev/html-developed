@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gira a Roleta</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="text/javascript" src="./js/Winwheel.min.js"></script>
+    <script type="text/javascript" src="./js/TweenMax.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="pag-home">
+            <div class="content">
+                <div class="header">
+                    Gira a Roleta
+                </div>
+                <div class="body">
+                    <div class="pim-code" style="display: none;">
+                        <h2>Use o PIM para acessar o Jogo</h2>
+                        <h3>PIM: 718293</h3>
+                    </div>
+                    <div class="message">
+                        <p>Jogadores</p>
+                        <ul id="listGamer"></ul>
+                    </div>
+                </div>
+                <div class="footer">Aguradando Jogadores...</div>
+            </div>
+            <aside>
+                <h2>Adcionar novo Jogador</h2>
+                <form>
+                    <label for="newGamer">Nome</label>
+                    <input type="text" id="newGamer">
+                    <div class="btn">
+                        <button onclick="addGamer()">Adcionar</button>
+                        <button onclick="init()">Iniciar</button>
+                    </div>
+
+                </form>
+            </aside>
+        </div>
+
+        <div class="pag-game" style="display: none;">
+            <div class="model--templete" style="display: none;">
+                <div class="letra" id="letraTample"></div>
+                <div class="letra-alfabeto not-used" id="alfabetoTample"></div>
+            </div>
+
+            <div class="header">
+                <div class="logo">Gire a Roleta</div>
+                <div class="gamers"></div>
+            </div>
+
+            <div class="content">
+                <div class="area-game">
+                    <div class="dica"></div>
+                    <div class="panel"></div>
+                    <div class="area-alfabeto"></div>
+                </div>
+
+                <div class="area-roleta">
+                    <div width="400" height="400" class="the_wheel" align="center" valign="center">
+                        <div class="setaRoleta"></div>
+                        <canvas id="canvas" width="380" height="380">
+                            <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please
+                                try another.</p>
+                        </canvas>
+                        <button onclick="startSpin()" class="btnGirarRoleta">
+                            Gire a Roleta
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="./DBWords.js"></script>
+    <script src="./gire-a-roleta.js"></script>
+</body>
+
+</html>

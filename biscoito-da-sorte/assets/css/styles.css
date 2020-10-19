@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container header {
+    background-color: #0286D4;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px rgba(0,0,0, 0.5);
+}
+
+.container header h1 {
+    color: #E4EFFF
+}
+
+.container .content {
+    max-width: 720px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container .content img {
+    height: 480px;
+    object-fit: contain;
+}
+
+.container .content .pharse-area {
+    margin: 20px ;
+    display: flex;
+    flex-direction: column;
+    color: #025688;
+}
+
+.container .content .pharse-area p:first-child{
+    text-align: justify;
+    font-size: 28px;
+
+}
+
+.container .content .pharse-area p:last-child{
+    margin-top: 18px;
+    font-size: 22px;
+    text-align: right;
+    font-style: italic;
+}
+
+.container .content button {
+    margin: 20px;
+    height: 40px;
+    text-transform: uppercase;
+    border: 2px;
+    border-radius: 14px;
+    background-color: #0286D4;
+    font-size: 22px;
+    font-weight: 700;
+    color: #E4EFFF;
+    outline: none;
+    transition: 0.2;
+}
+
+.container .content button:active {
+    background-color: #E4EFFF;
+    color: #025688;
+}
+
+.container .content button:focus {
+    border: 2px solid #025688;
+}
+
+.container .content button.broken {
+    background-color: #F15A02;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.container .content button.broken:active {
+    background-color: #FFF;
+    color: #F15A02;
+}
+
+.container .content button.broken:focus {
+    border: 2px solid #9C3E0E;
+}
